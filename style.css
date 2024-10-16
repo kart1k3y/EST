@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    position: relative; /* Make container relative */
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    background-color: #141619;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    scroll-snap-align: start;
+    color: whitesmoke;
+    font-family: 'Poppins';
+    position: relative; /* Position slides relatively */
+    z-index: 2; /* Ensure text is above blobs */
+}
+
+h1 {
+    font-size: 70px;
+    word-spacing: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+text {
+    color: aqua;
+}
+
+n {
+    background: linear-gradient(135deg, #4053C2 0%, #DD1818 25%, #CEE808 46%, #E01291 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    background-clip: text;
+}
+
+/* Blob SVG Styles */
+.blob {
+    position: absolute; /* Position blobs absolutely */
+    width: 350px; /* Set a width for the blob */
+    height: 350px; /* Set a height for the blob */
+    z-index: 1; /* Make sure blobs are behind text */
+    animation: moveBlob 10s ease-in-out infinite; /* Animation for blobs */
+    filter: blur(5px); /* Apply blur effect */
+}
+
+.blob-left {
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+}
+
+.blob-right {
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+}
+
+@keyframes moveBlob {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(20px, 15px); /* Adjust movement */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+h2 {   /* Optional: Adjust the top margin for spacing */
+    font-size: 50px;
+    text-align: center;
+}
+
+.con{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Align items to the left (optional) */
+    justify-content: flex-start; /* Align items to the top */
+    gap: 50px;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+}
+
+.facts{
+    margin-top: 20px;
+    height: 350px;
+    width: 960px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    align-content: center;
+    box-shadow: 0 0 15px rgba(17, 221, 68, 0.89), /* First layer of glow */
+                0 0 30px rgba(11, 215, 230, 0.822), /* Second layer of glow */
+                0 0 45px rgb(10, 76, 175);
+}
+
+p{
+    padding: 8px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 4px;
+}   
+
+.line{
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.fact{
+    height: 180px;
+    width: 180px;
+    background-color: #1a2770;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2px 4px;
+    
+}
+
+img{
+    height: 150px;
+    width: 230px;
+    margin-top: 35px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Align items to the left (optional) */
+    justify-content: flex-start; /* Align items to the top */
+    gap: 50px;
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    background-color: #4053C2;
+    
+}
+
+u{
+    margin: 20px 80px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Exo 2';
+}
+
+h3{
+    font-size: 40px;
+    color: #141619;
+}
+
+.name{
+    margin-top: -20px;
+    font-size: 30px;
+    text-align: center;
+}
