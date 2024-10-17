@@ -102,9 +102,6 @@ h2 {   /* Optional: Adjust the top margin for spacing */
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     align-content: center;
-    box-shadow: 0 0 15px rgba(17, 221, 68, 0.89), /* First layer of glow */
-                0 0 30px rgba(11, 215, 230, 0.822), /* Second layer of glow */
-                0 0 45px rgb(10, 76, 175);
 }
 
 p{
