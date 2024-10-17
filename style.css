@@ -55,6 +55,7 @@ n {
     z-index: 1; /* Make sure blobs are behind text */
     animation: moveBlob 10s ease-in-out infinite; /* Animation for blobs */
     filter: blur(5px); /* Apply blur effect */
+    opacity: 0.4;
 }
 
 .blob-left {
@@ -99,9 +100,11 @@ h2 {   /* Optional: Adjust the top margin for spacing */
     margin-top: 20px;
     height: 350px;
     width: 960px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 1);
     border-radius: 25px;
     align-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 p{
@@ -115,7 +118,6 @@ p{
     height: 220px;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .fact{
@@ -129,7 +131,7 @@ p{
     
 }
 
-img{
+div img{
     height: 150px;
     width: 230px;
     margin-top: 35px;
@@ -146,7 +148,7 @@ img{
     padding: 20px;
     height: 100vh;
     width: 100%;
-    background-color: #2b49d198;
+    background-color: #214477;
     
 }
 
@@ -176,3 +178,42 @@ h3{
 u{
     text-underline-offset: 20px;
 }
+
+#b3{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 800px;
+    width: 400px;
+    height: 900px;
+}
+
+#b1{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 300px;
+    width: 400px;
+    height: 900px;
+}
+
+#b4{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    rotate: 180deg;
+    top: 1300px;
+    width: 400px;
+    height: 900px;
+}
+
+#b2{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 1900px;
+    rotate: 180deg;
+    width: 400px;
+    height: 900px;
+}
+
