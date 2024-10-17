@@ -217,3 +217,85 @@ u{
     height: 900px;
 }
 
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto; /* Adjust container height to auto for better scrolling on mobile */
+    }
+
+    .slide {
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px; /* Reduce gap for smaller screens */
+        padding: 20px;
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    h1 {
+        font-size: 40px; /* Reduce font size */
+    }
+
+    h2 {
+        font-size: 30px; /* Adjust h2 font size */
+    }
+
+    p {
+        font-size: 16px; /* Adjust paragraph text size */
+    }
+
+    .facts {
+        width: 100%; /* Make the container full-width */
+        height: auto; /* Allow flexible height */
+        padding: 10px; /* Add padding */
+    }
+
+    .fact {
+        width: 100%; /* Make facts full-width */
+        height: auto; /* Adjust height to fit content */
+        margin: 10px 0; /* Add margin for spacing */
+        padding: 10px; /* Adjust padding */
+        font-size: 14px; /* Smaller text for facts */
+    }
+
+    .line {
+        flex-direction: column; /* Stack the fact boxes vertically */
+        gap: 20px; /* Add gap between the items */
+    }
+
+    div img {
+        width: 100%; /* Make images full-width */
+        height: auto; /* Adjust height proportionally */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .footer {
+        gap: 20px; /* Adjust gap for mobile */
+        padding: 20px;
+    }
+
+    span {
+        font-size: 18px; /* Adjust text size for readability */
+        margin: 10px; /* Reduce margin */
+    }
+
+    h3 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .name {
+        font-size: 16px; /* Adjust name text size */
+        line-height: 30px;
+    }
+
+    /* Adjust blob size for smaller screens */
+    .blob {
+        width: 200px;
+        height: 200px;
+    }
+
+    #b3, #b1, #b4, #b2 {
+        width: 250px;
+        height: 600px;
+    }
+}
+
+
