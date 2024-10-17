@@ -141,16 +141,16 @@ img{
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Align items to the left (optional) */
-    justify-content: flex-start; /* Align items to the top */
+    justify-content: center; /* Align items to the top */
     gap: 50px;
     padding: 20px;
     height: 100vh;
     width: 100%;
-    background-color: #4053C2;
+    background-color: #2b49d198;
     
 }
 
-u{
+span{
     margin: 20px 80px;
     text-decoration: none;
     font-size: 30px;
@@ -160,10 +160,19 @@ u{
 h3{
     font-size: 40px;
     color: #141619;
+    letter-spacing: 4px;
+
 }
 
 .name{
-    margin-top: -20px;
-    font-size: 30px;
+    margin-top: 0px;
+    font-size: 20px;
     text-align: center;
+    font-family: 'Rubik Mono One';
+    font-weight: lighter;
+    line-height: 40px;
+}
+
+u{
+    text-underline-offset: 20px;
 }
